@@ -1,0 +1,21 @@
+{
+  "plugins": ["node"],
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
+  "parserOptions": {
+  "sourceType": "script",
+  "ecmaFeatures": {
+    "generators": true
+  }},
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "rules": {
+    "node/no-unsupported-features": [2, { "version": 6 }],
+    "no-underscore-dangle": [2, { "allowAfterThis": true }],
+    "strict": [2, "global"],
+    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }]
+  }
+}
+
+
